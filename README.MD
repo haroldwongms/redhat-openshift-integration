@@ -1,8 +1,11 @@
 
 ### Overview
 All leads from Azure Test Drives are stored in a table. 
+
 System sends all leads received to Eloqua site by calling an endpoint with appropriate values in correct format.
+
 It notifies one or more users via email for all failed requests. 
+
 In case of failure to send the leads, system retries again in future and keeps doing till it clears all backlogs. 
 
 ### Architecture Diagram:
@@ -10,7 +13,9 @@ In case of failure to send the leads, system retries again in future and keeps d
 
 ### Resources:
 •	Azure Storage (Table - 1 & Queue - 2)
+
 •	Azure Function - 3
+
 •	SendGrid
 
 ### Eloqua URL Format:  
